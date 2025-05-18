@@ -1,0 +1,21 @@
+C++
+
+class person
+
+#include <iostream>
+#include <string>
+using namespace std;
+   
+ class Person {
+    
+
+nt main() {  
+    Person person("고길동");
+    cout << "원래 이름: " + person.getName() << endl;
+    person.setName("곡식");  // 첫 글자 다름 
+    person.setName("고구마");   // 첫 글자 같음 (성공)
+    person.setName("박길동");  // 첫 글자 다름
+    cout << "최종 이름: " + person.getName() << endl;
+ 
+    return 0;
+}
